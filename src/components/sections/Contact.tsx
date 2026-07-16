@@ -7,6 +7,7 @@ import { GlassCard } from '../ui/GlassCard';
 import { Button } from '../ui/Button';
 import { personalInfo, socialLinks } from '../../data/personal';
 import { sendEmail, type ContactFormData } from '../../services/emailService';
+import { saveContactSubmission } from '../../services/firebase';
 import { fadeInUp, staggerContainer, slideInLeft, slideInRight } from '../../animations/variants';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
@@ -56,9 +57,15 @@ export function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('sending');
-    const success = await sendEmail(formData);
-    setStatus(success ? 'success' : 'error');
-    if (success) {
+    
+    // Save to Firebase Firestore Database
+    const dbSuccess = await saveContactSubmission(formData);
+    
+    // Also trigger EmailJS (optional notification)
+    await sendEmail(formData);
+    
+    setStatus(dbSuccess ? 'success' : 'error');
+    if (dbSuccess) {
       setFormData({ name: '', email: '', company: '', projectType: '', budget: '', message: '' });
       setTimeout(() => setStatus('idle'), 5000);
     } else {
