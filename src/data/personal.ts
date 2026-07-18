@@ -11,7 +11,6 @@ export interface PersonalInfo {
   bio: string;
   email: string;
   location: string;
-  github: string;
   linkedin: string;
   availableForWork: boolean;
 }
@@ -23,13 +22,11 @@ export const personalInfo: PersonalInfo = {
   bio: 'I am a passionate Full Stack Web Developer focused on building modern, premium, responsive, and high-performance web applications. I enjoy transforming ideas into polished digital products with clean code, excellent user experience, and scalable architecture.',
   email: 'figvosupport@gmail.com',
   location: 'India',
-  github: 'https://github.com/Gowdhaman06',
   linkedin: 'https://linkedin.com/in/gowdhaman',
   availableForWork: true,
 };
 
 export const socialLinks: SocialLink[] = [
-  { name: 'GitHub', url: 'https://github.com/Gowdhaman06', icon: 'Github' },
   { name: 'LinkedIn', url: 'https://linkedin.com/in/gowdhaman', icon: 'Linkedin' },
   { name: 'Email', url: 'mailto:figvosupport@gmail.com', icon: 'Mail' },
 ];

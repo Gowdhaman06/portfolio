@@ -1,11 +1,10 @@
 import { Mail, ArrowUp, Heart } from 'lucide-react';
-import { Github, Linkedin } from '../ui/Icons';
+import { Linkedin } from '../ui/Icons';
 import { motion } from 'motion/react';
 import { socialLinks } from '../../data/personal';
 import { Logo } from '../ui/Logo';
 
 const iconMap: Record<string, React.ReactNode> = {
-  Github: <Github size={18} />,
   Linkedin: <Linkedin size={18} />,
   Mail: <Mail size={18} />,
 };
