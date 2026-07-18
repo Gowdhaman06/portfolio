@@ -1,4 +1,4 @@
-import { Mail, ArrowUp, Heart } from 'lucide-react';
+import { Mail, ArrowUp } from 'lucide-react';
 import { Linkedin, Instagram, Facebook } from '../ui/Icons';
 import { motion } from 'motion/react';
 import { socialLinks } from '../../data/personal';
@@ -64,8 +64,8 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-10 pt-6 border-t border-[var(--glass-border)] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-[var(--text-secondary)] flex items-center gap-1">
-            © {currentYear} Figvo. Built by Gowdhaman N. with <Heart size={14} className="text-red-500 fill-red-500" /> and React.
+          <p className="text-sm text-[var(--text-secondary)]">
+            © {currentYear} Figvo. Built by Gowdhaman N.
           </p>
 
           {/* Back to Top */}
