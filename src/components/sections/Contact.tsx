@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Send, Mail, MapPin, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import { Linkedin } from '../ui/Icons';
+import { Linkedin, Instagram, Facebook } from '../ui/Icons';
 import { SectionHeading } from '../ui/SectionHeading';
 import { GlassCard } from '../ui/GlassCard';
 import { Button } from '../ui/Button';
@@ -34,6 +34,8 @@ const budgetRanges = [
 
 const socialIconMap: Record<string, React.ReactNode> = {
   Linkedin: <Linkedin size={18} />,
+  Instagram: <Instagram size={18} />,
+  Facebook: <Facebook size={18} />,
   Mail: <Mail size={18} />,
 };
 

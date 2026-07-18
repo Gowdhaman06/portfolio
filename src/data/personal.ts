@@ -22,12 +22,14 @@ export const personalInfo: PersonalInfo = {
   bio: 'I am a passionate Full Stack Web Developer focused on building modern, premium, responsive, and high-performance web applications. I enjoy transforming ideas into polished digital products with clean code, excellent user experience, and scalable architecture.',
   email: 'figvosupport@gmail.com',
   location: 'India',
-  linkedin: 'https://linkedin.com/in/gowdhaman',
+  linkedin: 'https://www.linkedin.com/company/figvo',
   availableForWork: true,
 };
 
 export const socialLinks: SocialLink[] = [
-  { name: 'LinkedIn', url: 'https://linkedin.com/in/gowdhaman', icon: 'Linkedin' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/company/figvo', icon: 'Linkedin' },
+  { name: 'Instagram', url: 'https://www.instagram.com/figvo_?igsh=MTMxOXF0d3htN2prOQ==', icon: 'Instagram' },
+  { name: 'Facebook', url: 'https://www.facebook.com/share/1BcDhpCET6/', icon: 'Facebook' },
   { name: 'Email', url: 'mailto:figvosupport@gmail.com', icon: 'Mail' },
 ];
 

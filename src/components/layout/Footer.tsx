@@ -1,11 +1,13 @@
 import { Mail, ArrowUp, Heart } from 'lucide-react';
-import { Linkedin } from '../ui/Icons';
+import { Linkedin, Instagram, Facebook } from '../ui/Icons';
 import { motion } from 'motion/react';
 import { socialLinks } from '../../data/personal';
 import { Logo } from '../ui/Logo';
 
 const iconMap: Record<string, React.ReactNode> = {
   Linkedin: <Linkedin size={18} />,
+  Instagram: <Instagram size={18} />,
+  Facebook: <Facebook size={18} />,
   Mail: <Mail size={18} />,
 };
 
